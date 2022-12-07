@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/andrei/projects/test-githubaction/.build",
+  "command": "/usr/lib/ccache/g++ -g -Wall -Wextra -pedantic -Werror -fPIC -std=gnu++20 -o CMakeFiles/main.dir/main.cpp.o -c /home/andrei/projects/test-githubaction/main.cpp",
+  "file": "/home/andrei/projects/test-githubaction/main.cpp"
+},
+{
+  "directory": "/home/andrei/projects/test-githubaction/.build",
+  "command": "/usr/lib/ccache/g++ -g -Wall -Wextra -pedantic -Werror -fPIC -std=gnu++20 -o CMakeFiles/main.dir/A.cpp.o -c /home/andrei/projects/test-githubaction/A.cpp",
+  "file": "/home/andrei/projects/test-githubaction/A.cpp"
+}
+]

@@ -1,15 +1,36 @@
-name: clang-tidy
+name: clang-tidy-review
 
-on: [pull_request]
+on:
+  pull_request:
+    paths:
+      - '**.cxx'
+      - '**.h'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
-
-jobs:
-  build:
+  review:
     runs-on: ubuntu-latest
     steps:
-    - name: execute
-    - uses: asarium/clang-tidy-action@v1.0
-      with:
-        fixesFile: clang-tidy-warnings.yaml
+      - uses: actions/checkout@v2
+        with:
+          submodules: false
 
+      - name: Run clang-tidy
+        uses: ZedThree/clang-tidy-review@v0.8.4
+        id: review
+        with:
+          build_dir: build
+          apt_packages: ""
+          config_file: ".clang-tidy"
+          # Googletest triggers a _lot_ of clang-tidy warnings, so ignore all
+          # the unit tests until they're fixed or ignored upstream
+          exclude: "tests/unit/*cxx"
+          cmake_command: |
+            git config --global --add safe.directory '*' &&
+            cmake . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+            
+            
+            

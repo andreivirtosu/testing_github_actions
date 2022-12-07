@@ -1,0 +1,15 @@
+name: clang-tidy
+
+on: [pull_request]
+
+jobs:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: execute
+    - uses: asarium/clang-tidy-action@v1.0
+      with:
+        fixesFile: clang-tidy-warnings.yaml
+

@@ -4,5 +4,8 @@ class A {
 public:
   void test_func(int arg);
 
-  void test_func2() {}
+  void test_func_xxx() {}
+  
+  void newFunc(){}
+  
 };

@@ -1,0 +1,94 @@
+Diagnostics:
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 0
+    FilePath: ''
+    Message: invalid case style for template parameter 'expr-type'
+    Replacements: []
+  DiagnosticName: readability-identifier-naming
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 45
+    FilePath: /home/andrei/projects/test-githubaction/A.cpp
+    Message: method 'test_func' can be made static
+    Replacements:
+    - FilePath: /home/andrei/projects/test-githubaction/A.h
+      Length: 0
+      Offset: 34
+      ReplacementText: 'static '
+  DiagnosticName: readability-convert-member-functions-to-static
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 76
+    FilePath: /home/andrei/projects/test-githubaction/A.cpp
+    Message: 42 is a magic number; consider replacing it with a named constant
+    Replacements: []
+  DiagnosticName: readability-magic-numbers
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 39
+    FilePath: /home/andrei/projects/test-githubaction/A.h
+    Message: invalid case style for function 'test_func'
+    Replacements:
+    - FilePath: /home/andrei/projects/test-githubaction/A.cpp
+      Length: 9
+      Offset: 45
+      ReplacementText: testFunc
+    - FilePath: /home/andrei/projects/test-githubaction/A.h
+      Length: 9
+      Offset: 39
+      ReplacementText: testFunc
+  DiagnosticName: readability-identifier-naming
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 67
+    FilePath: /home/andrei/projects/test-githubaction/A.h
+    Message: invalid case style for function 'test_func2'
+    Replacements:
+    - FilePath: /home/andrei/projects/test-githubaction/A.h
+      Length: 10
+      Offset: 67
+      ReplacementText: testFunc2
+  DiagnosticName: readability-identifier-naming
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 0
+    FilePath: ''
+    Message: invalid case style for template parameter 'expr-type'
+    Replacements: []
+  DiagnosticName: readability-identifier-naming
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 39
+    FilePath: /home/andrei/projects/test-githubaction/A.h
+    Message: invalid case style for function 'test_func'
+    Replacements:
+    - FilePath: /home/andrei/projects/test-githubaction/main.cpp
+      Length: 9
+      Offset: 60
+      ReplacementText: testFunc
+    - FilePath: /home/andrei/projects/test-githubaction/A.h
+      Length: 9
+      Offset: 39
+      ReplacementText: testFunc
+  DiagnosticName: readability-identifier-naming
+  Level: Warning
+- BuildDirectory: /home/andrei/projects/test-githubaction/.build
+  DiagnosticMessage:
+    FileOffset: 67
+    FilePath: /home/andrei/projects/test-githubaction/A.h
+    Message: invalid case style for function 'test_func2'
+    Replacements:
+    - FilePath: /home/andrei/projects/test-githubaction/A.h
+      Length: 10
+      Offset: 67
+      ReplacementText: testFunc2
+  DiagnosticName: readability-identifier-naming
+  Level: Warning
+MainSourceFile: ''
